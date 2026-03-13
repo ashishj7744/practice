@@ -5,7 +5,7 @@ stages {
 
     stage('Set Docker Env') {
          steps {
-            sh 'eval $(minikube docker-env)'
+             sh 'sudo -u ubuntu bash -c "eval \$(minikube docker-env)"'
         }
     }
     
